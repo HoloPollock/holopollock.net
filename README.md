@@ -1,4 +1,4 @@
-# Holopollock.net
+# holopollock.net
 A small linktree like site that I can style and control for my links and stuff
 
 ### Dev
