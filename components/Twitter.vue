@@ -24,7 +24,6 @@ svg {
 	fill: #000;
 	width: 32px;
 	height: 32px;
-	pointer-events: none;
 }
 
 a {
