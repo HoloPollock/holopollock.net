@@ -23,6 +23,16 @@ export default {
 
       },
       {
+        hid: "twitter:site",
+        name: "twitter:site",
+        content: "@holopollock"
+      },
+      {
+      hid: "twitter:creator",
+      name: "twitter:creator",
+      content: "@holopollock"
+      },
+      {
         hid: 'twitter:title',
         name: 'twitter:title',
         content: "Quinn Pollock's Links",
