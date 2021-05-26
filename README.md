@@ -1,6 +1,7 @@
-# nuxt-linktree
+# Holopollock.net
+A small linktree like site that I can style and control for my links and stuff
 
-## Build Setup
+### Dev
 
 ```bash
 # install dependencies
@@ -16,5 +17,3 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
