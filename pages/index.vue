@@ -27,9 +27,8 @@
 
 <script>
 import Card from '~/components/Card.vue'
-import Twitter from '~/components/Twitter.vue'
 export default {
-	components: { Card, Twitter },
+	components: { Card },
 }
 </script>
 
