@@ -17,6 +17,12 @@ export default {
         content: "Quinn Pollock's links on the Internet ",
       },
       {
+        hid: "twitter:card",
+        name: "twitter:card",
+        content: "summary"
+
+      },
+      {
         hid: 'twitter:title',
         name: 'twitter:title',
         content: "Quinn Pollock's Links",
