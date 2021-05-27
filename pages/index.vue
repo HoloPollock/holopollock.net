@@ -2,7 +2,7 @@
 	<main class="container">
 		<Header
 			name="Quinn Pollock"
-			description="Hey I'm Quinn(They/Them) and this is the stuff I do on the internet"
+			description="Hey I'm Quinn (They/Them) and this is the stuff I do on the internet"
 			image="quinn_icon"
 		/>
 		<Card link="https://quinnpollock.net"> My Website </Card>
