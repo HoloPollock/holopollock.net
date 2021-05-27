@@ -1,7 +1,10 @@
 <template>
 	<header>
 		<NuxtLink to="/">
-			<img :src="require(`~/assets/img/${image}.jpg`)" />
+			<img
+				v-bind:alt="imageAlt"
+				:src="require(`~/assets/img/${image}.jpg`)"
+			/>
 		</NuxtLink>
 		<h1 id="name">{{ name }}</h1>
 		<div id="description">{{ description }}</div>
@@ -11,7 +14,7 @@
 <script>
 export default {
 	name: 'Header',
-	props: ['image', 'name', 'description'],
+	props: ['image', 'image-alt', 'name', 'description'],
 }
 </script>
 

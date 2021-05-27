@@ -1,5 +1,7 @@
 <template>
-	<a v-bind:href="link" class="card" target="_blank"> <slot></slot> </a>
+	<a v-bind:href="link" class="card" target="_blank" rel="noopener">
+		<slot></slot>
+	</a>
 </template>
 
 <script>

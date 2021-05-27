@@ -4,6 +4,7 @@
 			name="Quinn Pollock"
 			description="Hey I'm Quinn (They/Them) and this is the stuff I do on the internet"
 			image="quinn_icon"
+			image-alt="Drawn photo of Quinn"
 		/>
 		<Card link="https://quinnpollock.net"> My Website </Card>
 		<Card link="https://folksandfables.net">
