@@ -26,5 +26,13 @@ export default {
 	line-height: 1.5;
 	letter-spacing: 1.5px;
 	width: 100%;
+	transition-duration: 0.3s, 0.3s;
+	transition-timing-function: initial, initial;
+	transition-delay: initial, initial;
+	transition-property: box-shadow;
+}
+
+.card:hover {
+	box-shadow: rgba(132, 8, 132, 0.25) -8px 4px 20px 0px;
 }
 </style>
