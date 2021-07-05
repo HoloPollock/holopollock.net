@@ -18,7 +18,12 @@
 		<Card link="https://directed-by-women.vercel.app/"
 			>Directed by Women
 		</Card>
-                <Card link="https://goodbyteco.github.io/Letterboxd-Ratings-Remover/"> Hide People's Ratings </Card>
+		<Card link="https://goodbyteco.github.io/Letterboxd-Ratings-Remover/">
+			Hide People's Ratings
+		</Card>
+		<Card link="https://www.filmfrequency.com">
+			Your Films as a Github-like Graph
+		</Card>
 		<Card link="https://letterboxd.com/holopollock/"> My Letterboxd </Card>
 		<Divider>Development Stuff</Divider>
 		<Card link="https://github.com/holopollock"> My Github </Card>
