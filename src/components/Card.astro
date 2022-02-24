@@ -1,17 +1,12 @@
-<template>
-	<a v-bind:href="link" class="card" target="_blank" rel="noopener">
-		<slot></slot>
-	</a>
-</template>
+---
+const {link} = Astro.props
+---
 
-<script>
-export default {
-	name: 'Card',
-	props: ['link'],
-}
-</script>
+<a href={link} class="card" target="_blank" rel="noopener">
+ <slot/>
+</a>
 
-<style scoped>
+<style>
 .card {
 	color: #fafafa;
 	font-weight: bold;

@@ -1,0 +1,18 @@
+{
+  "editor.formatOnSave": false,
+  "files.exclude": {
+    "**/.git": true,
+    // ".gitignore": true,
+    "**/.DS_Store": true,
+    "package-lock.json": true,
+    "node_modules": true,
+    "dist": true,
+    ".eslintrc": true,
+    // "astro.config.mjs": true,
+    ".node-version": true,
+    ".npmrc": true,
+    ".stackblitzrc": true,
+    "sandbox.config.json": true,
+    "tsconfix.json": true
+  }
+}
