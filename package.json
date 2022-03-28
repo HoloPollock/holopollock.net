@@ -9,7 +9,7 @@
     "preview": "astro preview"
   },
   "devDependencies": {
-    "astro": "^0.24",
+    "astro": "^0.25",
     "autoprefixer": "^10.4"
   }
 }
