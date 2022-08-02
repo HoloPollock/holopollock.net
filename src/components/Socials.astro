@@ -1,20 +1,26 @@
 ---
 import Instagram from './Instagram.astro'
 import Twitter from './Twitter.astro'
-const {twitterLink, instagramLink} = Astro.props
+import Tiktok from './Tiktok.astro';
+const { twitterLink, instagramLink, tiktokLink } = Astro.props
 
 ---
+
 <div class="card">
-		{twitterLink && <Twitter link={twitterLink} />}
-		{instagramLink && <Instagram link={instagramLink} />}
+	{twitterLink &&
+	<Twitter link={twitterLink} />}
+	{instagramLink &&
+	<Instagram link={instagramLink} />}
+	{tiktokLink &&
+	<Tiktok link={tiktokLink} />}
 </div>
 
 <style>
-.card {
-	flex-wrap: wrap;
-	align-items: center;
-	width: 100%;
-	height: 100%;
-	padding-top: 8px;
-}
+	.card {
+		flex-wrap: wrap;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		padding-top: 8px;
+	}
 </style>
