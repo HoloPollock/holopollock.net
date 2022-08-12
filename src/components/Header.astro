@@ -1,45 +1,48 @@
 ---
-const {imageAlt, image, name, description} = Astro.props
+const { imageAlt, image, name, description } = Astro.props
 ---
+
 <header>
-    <a href="/">
-        <img
-            alt={imageAlt}
-            src={`/assets/img/${image}.jpg`}
-        />
-    </a>
-    <h1 id="name">{ name }</h1>
-    <div id="description">{ description }</div>
+	<a href="/">
+		<picture>
+			<source type="image/avif" srcset="/assets/img/${image}.avif" />
+			<source type="image/webp" srcset="/assets/img/${image}.webp" />
+			<source type="image/jp2" srcset="/assets/img/${image}.jp2" />
+			<img alt={imageAlt} src={`/assets/img/${image}.jpg`} />
+		</picture>
+	</a>
+	<h1 id="name">{ name }</h1>
+	<div id="description">{ description }</div>
 </header>
 
 <style>
-header {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	margin-bottom: 16px;
-}
+	header {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		margin-bottom: 16px;
+	}
 
-header * {
-	margin-bottom: 12px;
-}
+	header * {
+		margin-bottom: 12px;
+	}
 
-img {
-	border-radius: 50%;
-	width: 96px;
-	height: 96px;
-	display: block;
-	object-fit: contain;
-	object-position: initial;
-}
+	img {
+		border-radius: 50%;
+		width: 96px;
+		height: 96px;
+		display: block;
+		object-fit: contain;
+		object-position: initial;
+	}
 
-#name {
-	font-size: 1.25em;
-}
+	#name {
+		font-size: 1.25em;
+	}
 
-#description {
-	font-weight: 500;
-}
+	#description {
+		font-weight: 500;
+	}
 </style>
