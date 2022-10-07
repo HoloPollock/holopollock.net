@@ -5,8 +5,9 @@ const { imageAlt, image, name, description } = Astro.props;
 <header>
   <a href="/">
     <picture>
-      <source type="image/avif" srcset="/assets/img/${image}.avif" />
-      <source type="image/webp" srcset="/assets/img/${image}.webp" />
+      <source type="image/avif" srcset={`/assets/img/${image}.avif`} />
+	  <source type="image/jp2" srcset={`/assets/img/${image}.jp2`} />
+      <source type="image/webp" srcset={`/assets/img/${image}.webp`} />
       <img alt={imageAlt} src={`/assets/img/${image}.jpg`} />
     </picture>
   </a>
