@@ -1,5 +1,7 @@
 # Holopollock.net
 
+This is my link tree made from
+
 ## A customizable linktree link site
 
 To customize the site you only need to edit 2 Files `globalVars.ts` and `Links.astro`
