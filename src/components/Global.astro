@@ -1,37 +1,45 @@
-<title>Quinn Pollock</title>
+---
+import { PersonInfo, MetaData } from "../globalVars";
+import { twitterName } from "../conputedVars";
+const {Name} = PersonInfo;
+const {FirstName, LastName} = Name;
+const {BaseUrl} = MetaData
+const FullName = `${FirstName} ${LastName}`
+---
+<title>{FullName}</title>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width initial-scale=1" />
-<meta name="description" content="Quinn Pollock's links on the Internet" />
+<meta name="description" content={`${FullName}'s links on the Internet`} />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@holopollock" />
-<meta name="twitter:creator" content="@holopollock" />
-<meta name="twitter:title" content="Quinn Pollock's Links" />
+<meta name="twitter:site" content={`@${twitterName}`} />
+<meta name="twitter:creator" content={`@${twitterName}`} />
+<meta name="twitter:title" content={`${FullName}'s Links`} />
 <meta
   name="twitter:description"
-  content="Quinn Pollock's links on the Internet"
+  content={`${FullName}'s links on the Internet`}
 />
 <meta
   name="twitter:image"
-  content="https://holopollock.net/assets/img/quinn_icon.jpg"
+  content={`https://${BaseUrl}/assets/img/${MetaData.ImageName}.jpg`}
 />
-<meta name="twitter:image:alt" content="Quinn Pollocks links on the Internet" />
-<meta property="og:title" content="Quinn Pollock's Links" />
+<meta name="twitter:image:alt" content={`${FullName}'s links on the Internet`} />
+<meta property="og:title" content={`${FullName}'s Links`} />
 <meta
   property="og:description"
-  content="Quinn Pollock's links on the Internet"
+  content={`${FullName}'s links on the Internet`}
 />
 <meta
   property="og:image"
-  content="https://holopollock.net/assets/img/quinn_icon.jpg"
+  content={`https://${BaseUrl}/assets/img/${MetaData.ImageName}.jpg`}
 />
-<meta property="og:url" content="https://holopollock.net" />
+<meta property="og:url" content={`https://${BaseUrl}`} />
 <meta
   property="og:image:secure_url"
-  content="https://holopollock.net/assets/img/quinn_icon.jpg"
+  content={`https://${BaseUrl}/assets/img/quinn_icon.jpg`}
 />
-<meta property="og:image:alt" content="Quinn Pollock's Links" />
-<meta property="profile:username" content="holopollock" />
-<link rel="canonical" href="holopollock.net" />
+<meta property="og:image:alt" content={`${FullName}'s Links`} />
+<meta property="profile:username" content={twitterName} />
+<link rel="canonical" href={BaseUrl} />
 <link rel="icon" type="image/x-icon" href="/favicon.ico" />
 <style is:global>
   @font-face {
