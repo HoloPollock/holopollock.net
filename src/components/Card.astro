@@ -1,20 +1,24 @@
 ---
+import { MetaData } from "../globalVars";
 const { link } = Astro.props;
+
+const mainColor = MetaData.Colours.MainColour
+const backgroundColor = MetaData.Colours.BackgroundColour
 ---
 
 <a href={link} class="card" target="_blank" rel="noopener">
   <slot />
 </a>
 
-<style>
+<style define:vars={{mainColor, backgroundColor}}> 
   .card {
-    color: #fafafa;
+    color: var(--backgroundColor);
     font-weight: bold;
     display: block;
     text-transform: capitalize;
     border: 5px solid #1c1c1c;
     text-decoration: none;
-    background-color: rgb(132, 8, 132);
+    background-color: var(--mainColor);
     padding: 8px 20px;
     margin-bottom: 16px;
     position: relative;

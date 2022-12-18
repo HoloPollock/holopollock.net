@@ -1,9 +1,10 @@
 ---
 import Header from "../components/Header.astro";
-import Card from "../components/Card.astro";
-import Divider from "../components/Divider.astro";
+import Links from "../components/Links.astro";
 import Socials from "../components/Socials.astro";
 import Global from "../components/Global.astro";
+import { PersonInfo, Socials as SocialsLinks, MetaData } from "../globalVars";
+const {Name, Pronouns} = PersonInfo
 ---
 
 <!DOCTYPE html>
@@ -15,40 +16,19 @@ import Global from "../components/Global.astro";
   <body>
     <main class="container">
       <Header
-        name="Quinn Pollock"
-        description="Hey I'm Quinn (They/She) and this is the stuff I do on the internet"
-        image="quinn_icon"
-        image-alt="A photo of Quinn"
+        name={`${Name.FirstName} ${Name.LastName}`}
+        description={`Hey I'm ${Name.FirstName} ${Pronouns ? `(${Pronouns})` : ""} and this is the stuff I do on the internet`}
+        image={MetaData.ImageName}
+        image-alt={`A photo of ${Name.FirstName}`}
       />
-      <Card link="https://quinnpollock.net">My Website</Card>
-      <Card link="https://folksandfables.net">Folks &amp; Fables Podcast</Card>
-      <Card link="https://technicallyqueer.fm/">Technically Queer Podcast</Card>
-      <Card link="https://goodbyte.games">TTRPGs</Card>
-      <Divider>Letterboxd Stuff</Divider>
-      <Card link="https://letterboxd.com/holopollock/">My Letterboxd</Card>
-      <Card link="https://watchlistpicker.com/?u=holopollock">
-        Watch a Movie
-      </Card>
-      <Card link="https://directed-by-women.vercel.app/"
-        >Directed by Women
-      </Card>
-      <Card link="https://goodbyteco.github.io/Letterboxd-Ratings-Remover/">
-        Hide People's Ratings
-      </Card>
-      <Card link="https://www.filmfrequency.com">
-        Your Films as a Github-like Graph
-      </Card>
-      <Card link="https://www.shocktober.zone/">Track Your Shocktober</Card>
-      <Divider>Development Stuff</Divider>
-      <Card link="https://github.com/holopollock">My Github</Card>
-      <Card link="https://github.com/goodbyteco">Goodbyte</Card>
+      <Links/>
       <Socials
-        twitterLink="https://twitter.com/holopollock"
-        tiktokLink="https://www.tiktok.com/@holopollock"
-        spotifyLink="https://open.spotify.com/user/7vmoh3e6cw563y4nn8vdp2oog?si=7f0240558cc14bb6"
-        instagramLink="https://www.instagram.com/quandace/"
-        mastadonLink="https://social.audiovalentine.com/@holopollock"
-        cohostLink="https://cohost.org/holopollock"
+        twitterLink={SocialsLinks?.twitterLink}
+        tiktokLink={SocialsLinks?.tiktokLink}
+        spotifyLink={SocialsLinks.spotifyLink}
+        instagramLink={SocialsLinks.instagramLink}
+        mastadonLink={SocialsLinks.mastadonLink}
+        cohostLink={SocialsLinks.cohostLink}
       />
     </main>
 
