@@ -1,6 +1,6 @@
 # Holopollock.net
 
-This is my link tree made from
+This is my link tree made with <https://github.com/HoloPollock/Simple-Linktree>
 
 ## A customizable linktree link site
 
