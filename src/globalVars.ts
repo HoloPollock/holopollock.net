@@ -6,7 +6,7 @@ export const PersonInfo: Person = {
         FirstName: "Quinn",
         LastName: "Pollock"
     },
-    Pronouns: "She/They" 
+    Pronouns: "she/they" 
 }
 
 export const Socials: SocialsType = {
